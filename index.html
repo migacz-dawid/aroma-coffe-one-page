@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Aroma Café</title>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./css/reset-style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <nav id="navigation-main" role="navigation" aria-label="Nawigacja" class="navigation-main">
+    <div class="navigation-container">
+      <a href="index.html">
+        <div aria-label="Aroma Café - Strona główna" class="navigation-logo">
+          <p class="navigation-logo-text">Aroma</p>
+          <p class="navigation-logo-accent">Café</p>
+        </div>
+      </a>
+      <ul role="menubar" class="navigation-menu">
+        <li role="none">
+          <a role="menuitem" class="navigation-link" href="#about">
+            O nas
+          </a>
+        </li>
+        <li role="none">
+          <a role="menuitem" class="navigation-link" href="#menu">
+            Nasze Menu
+          </a>
+        </li>
+        <li role="none">
+          <a role="menuitem" class="navigation-link" href="#gallery">
+            Galeria
+          </a>
+        </li>
+        <li role="none">
+          <a role="menuitem" class="navigation-link" href="#contact">
+            Kontakt
+          </a>
+        </li>
+      </ul>
+      <div class="navigation-cta">
+        <a href="tel:+1234567890">
+          <div aria-label="Zadzwoń do nas" class="navigation-phone">
+            <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24"
+              class="navigation-phone-icon">
+              <path
+                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </svg>
+          </div>
+        </a>
+        <a href="#contact" class="btn-primary navigation-reservation-btn btn">
+          Zarezerwuj stolik
+        </a>
+      </div>
+      <button id="navigation-toggle" aria-label="Przycisk menu w mobilnej wersji" aria-controls="navigation-mobile-menu"
+        aria-expanded="false" class="navigation-toggle">
+        <svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
+          class="navigation-toggle-icon1 navigation-toggle-icon-open">
+          <path d="M4 5h16M4 12h16M4 19h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg><svg width="24" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
+          class="navigation-toggle-icon2 navigation-toggle-icon-close">
+          <path d="M18 6L6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="navigation-mobile-menu" aria-hidden="true" class="navigation-mobile">
+      <ul role="menu" class="navigation-mobile-list">
+        <li role="none">
+          <a href="#about" role="menuitem" class="navigation-mobile-link navigation-mobile-item">
+            O nas
+          </a>
+        </li>
+        <li role="none">
+          <a href="#menu" role="menuitem" class="navigation-mobile-link navigation-mobile-item">
+            Nasze Menu
+          </a>
+        </li>
+        <li role="none">
+          <a href="#gallery" role="menuitem" class="navigation-mobile-link navigation-mobile-item">
+            Galeria
+          </a>
+        </li>
+        <li role="none">
+          <a href="#contact" role="menuitem" class="navigation-mobile-link navigation-mobile-item">
+            Kontakt
+          </a>
+        </li>
+        <li role="none" class="navigation-mobile-cta-item">
+          <a href="#contact" class="btn-primary navigation-mobile-cta btn navigation-mobile-item">
+            Zarezerwuj stolik
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="header" aria-labelledby="header-heading" class="js-anim-section header-section">
+    <div class="header-container">
+      <div class="header-left">
+        <nav aria-label="Menu w headerze" class="header-nav">
+          <a href="#about">
+            <p class="header-nav-link">O nas</p>
+          </a>
+          <a href="#menu">
+            <p class="header-nav-link">Menu</p>
+          </a>
+          <a href="#gallery">
+            <p class="header-nav-link">Gleria</p>
+          </a>
+          <a href="#contact">
+            <p class="header-nav-link">Kontakt</p>
+          </a>
+        </nav>
+      </div>
+      <div class="header-right">
+        <h1 id="header-heading" class="header-title">
+          <span>Aroma Café</span>
+          <span class="header-title-sub">Gdzie każdy łyk to rytuał</span>
+        </h1>
+        <p class="header-subtitle">
+          Odkryj przestrzeń, gdzie cisza spotyka się ze smakiem.
+          Rzemieślnicza kawa, sezonowe składniki i wnętrze stworzone po
+          to, by zwolnić i poczuć więcej. Wejdź, usiądź i pozwól sobie na
+          moment tylko dla siebie.
+        </p>
+        <div class="header-cta-group">
+          <a href="#contact" class="btn-lg btn-primary btn">
+            Zarezerwuj stolik!
+          </a>
+          <a href="#contact" class="btn-lg btn-outline btn">
+            Zamów online
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" aria-labelledby="about-heading" class="js-anim-section about-section">
+      <div class="about-grid">
+        <div class="about-lead">
+          <h2 id="about-heading" class="section-title">
+            Gdzie cichy luksus spotyka rzemiosło kawy
+          </h2>
+          <p class="section-content">
+            W Aroma Café wierzymy, że najlepsza kawa rodzi się z ciszy i
+            uwagi. Każda filiżanka to efekt starannego wyboru ziaren,
+            precyzyjnego parzenia i szacunku dla pochodzenia. Minimalizm w
+            formie, maksimum w smaku – to nasza filozofia.
+          </p>
+          <p class="section-content">
+            Kawa z jednego źródła, sezonowe składniki, przemyślane
+            połączenia. Wszystko serwowane w przestrzeni, która pozwala
+            zwolnić. Matowa ceramika, ciepłe beże, delikatne światło –
+            każdy detal dobieramy tak, by pobudzał zmysły, a nie
+            rozpraszał.
+          </p>
+          <p class="section-content">
+            Wejdź i poczuj rytm spokojnej kawiarni: powolne rozmowy,
+            delikatny dźwięk ekspresu, czas tylko dla Ciebie. Aroma Café
+            to miejsce, do którego się wraca – oaza dla tych, którzy
+            cenią subtelność, jakość i nienaganny smak.
+          </p>
+        </div>
+        <div class="about-meta">
+          <div class="about-chef-note">
+            <svg width="24" height="24" viewBox="0 0 24 24" class="about-icon">
+              <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="m15.477 12.89l1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+                </path>
+                <circle r="6" cx="12" cy="8"></circle>
+              </g>
+            </svg>
+            <h3 class="about-chef-title">Rzemiosło w każdym detalu</h3>
+            <p class="about-chef-body">
+              Każda filiżanka to potwierdzenie naszego oddania jakości i
+              filozofii slow coffee.
+            </p>
+          </div>
+          <div class="about-badges">
+            <div class="about-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" class="about-badge-icon">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8c0 5.5-4.78 10-10 10"></path>
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                </g>
+              </svg>
+              <span class="about-badge-text">Etyczne źródła</span>
+            </div>
+            <div class="about-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" class="about-badge-icon">
+                <path
+                  d="M10 2v2m4-2v2m2 4a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1M6 2v2"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+              </svg>
+              <span class="about-badge-text">Single-Origin</span>
+            </div>
+            <div class="about-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" class="about-badge-icon">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87">
+                  </path>
+                  <circle r="4" cx="9" cy="7"></circle>
+                </g>
+              </svg>
+              <span class="about-badge-text">Doświadczeni barisci</span>
+            </div>
+            <div class="about-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" class="about-badge-icon">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="m15.477 12.89l1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+                  </path>
+                  <circle r="6" cx="12" cy="8"></circle>
+                </g>
+              </svg>
+              <span class="about-badge-text">Nagradzana jakość</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary btn">
+            Zarezerwuj stolik!
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="menu" aria-labelledby="menu-heading" class="js-anim-section menu-section">
+      <div class="menu-container">
+        <h2 id="menu-heading" class="section-title">Nasze Specjalności</h2>
+        <div class="menu-featured">
+          <img alt="Barista przygotowuje Signature Espresso" src="./img/menu1.jpg" class="menu-featured-image" />
+          <div class="menu-featured-content">
+            <h3 class="menu-featured-title">Signature Espresso</h3>
+            <p class="menu-featured-price">21</p>
+            <p class="menu-featured-desc">
+              <span>
+                Aksamitne, single-origin espresso o miodowej cremie i
+                subtelnym wykończeniu gorzkiej czekolady. Serwowane w
+                porcelanowej filiżance demitasse, by w pełni uwolnić aromat.
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img alt="Gość delektujący się Aroma Cortado" src="./img/menu2.jpg" class="menu-card-image" />
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Aroma Cortado</h3>
+                <span class="menu-card-price">5.50</span>
+              </div>
+              <p class="menu-card-desc">
+                Espresso i mleczna mikropiana w idealnych proporcjach –
+                jedwabista harmonia z nutą prażonego laskowego orzecha.
+              </p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img alt="Barista przygotowuje Velvet Latte" src="./img/menu3.jpg" class="menu-card-image" />
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Velvet Latte</h3>
+                <span class="menu-card-price">6.00</span>
+              </div>
+              <p class="menu-card-desc">
+                Powoli spienione mleko łączone z espresso, zwieńczone
+                aksamitną mikropianą i kakao single-origin.
+              </p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img alt="Kubek Cardamom Cappuccino" src="./img/menu4.jpg" class="menu-card-image" />
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Cardamom Cappuccino</h3>
+                <span class="menu-card-price">6.50</span>
+              </div>
+              <p class="menu-card-desc">
+                Klasyczne cappuccino wzbogacone świeżo mielonym zielonym
+                kardamonem i delikatną skórką cytrusową.
+              </p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img alt="Kubek Matcha Reverie" src="./img/menu5.jpg" class="menu-card-image" />
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Matcha Reverie</h3>
+                <span class="menu-card-price">7.00</span>
+              </div>
+              <p class="menu-card-desc">
+                Ceremonialny matcha ubijany do piany z dodatkiem spienionej
+                śmietanki – luminescencyjne wykończenie.
+              </p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img alt="Klientka delektuje się Matcha Reverie" src="./img/menu6.jpg" class="menu-card-image" />
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="menu-card-title">Cold Brew Reserve</h3>
+                <span class="menu-card-price">6.50</span>
+              </div>
+              <p class="menu-card-desc">
+                18-godzinna ekstrakcja na zimno. Klarowny, niskokawaowy smak
+                z nutami pestkowych owoców i kakao.
+              </p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img alt="Barista przygotowuje Affogato al Rhum" src="./img/menu7.jpg" class="menu-card-image" />
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="menu-card-title"></h3>
+                <span class="menu-card-price">8.00</span>
+              </div>
+              <p class="menu-card-desc">
+                Domowe lody waniliowe zalane espresso i dojrzałym rumem.
+                Gorące spotyka zimne, gorzkie spotyka słodkie.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="menu-cta">
+          <button class="btn-lg btn-primary btn">Zobacz pełne menu</button>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" aria-labelledby="gallery-heading" class="js-anim-section gallery-section">
+      <div class="gallery-container">
+        <h2 id="gallery-heading" class="section-title">Chwile Aromatu</h2>
+        <p class="section-subtitle">
+          Starannie wybrane kadry ciszy i ciepła: wnętrza skąpane w miękkim,
+          kremowym świetle, barisci tworzący precyzyjną latte art i goście
+          delektujący się spokojem w wyrafinowanej atmosferze.
+        </p>
+        <div class="gallery-layout">
+          <div role="region" aria-label="Karusela w galerii" class="gallery-hero">
+            <div class="gallery-carousel">
+              <div id="galleryCarouselTrack" class="gallery-carousel-track">
+                <div class="gallery-carousel-slide">
+                  <img alt="Wnętrze Aroma Cafe" src="./img/gallery-carousel-1.jpg" class="gallery-carousel-image" />
+                  <div class="gallery-carousel-caption">
+                    <h3 class="gallery-carousel-title">Serce kawiarni</h3>
+                    <p class="gallery-carousel-text">
+                      Stoliki w słonecznym rogu i ręcznie robiona ceramika,
+                      które zapraszają do długich rozmów.
+                    </p>
+                  </div>
+                </div>
+                <div class="gallery-carousel-slide">
+                  <img alt="Barista przygotowuje specjał kawiarni" src="./img/gallery-carousel-2.jpg"
+                    class="gallery-carousel-image" />
+                  <div class="gallery-carousel-caption">
+                    <h3 class="gallery-carousel-title">
+                      Warsztat Baristy
+                    </h3>
+                    <p class="gallery-carousel-text">
+                      Każda filiżanka to harmonia precyzji i sztuki — espresso tworzone z uważnością, latte malowane
+                      pianką.
+                    </p>
+                  </div>
+                </div>
+                <div class="gallery-carousel-slide">
+                  <img alt="Stolik w kawiarni otulony światłem świec" src="./img/gallery-carousel-3.jpg"
+                    class="gallery-carousel-image" />
+                  <div class="gallery-carousel-caption">
+                    <h3 class="gallery-carousel-title">Wieczorna cisza</h3>
+                    <p class="gallery-carousel-text">
+                      Po zmroku kawiarnia zanurza się w ciepłych tonach i miękkim świetle świec.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button id="galleryPrev" aria-label="Poprzedni obrazek"
+                class="gallery-carousel-btn-prev gallery-carousel-btn">
+                <span aria-hidden="true">‹</span>
+              </button>
+              <button id="galleryNext" aria-label="Następny obrazek" class="gallery-carousel-btn-next gallery-carousel-btn">
+                <span aria-hidden="true">›</span>
+              </button>
+            </div>
+          </div>
+          <div aria-label="Więcej zmysłowych momentów" class="gallery-masonry">
+            <img alt="Specjał kawiarni Aroma Cafe - latte art" src="./img/gallery1.jpg" class="gallery-masonry-image" />
+            <img alt="Brista obsługuje maszynę do kawy" src="./img/gallery2.jpg"
+              class="gallery-masonry-image-tall gallery-masonry-image" />
+            <img alt="Pięknie podane makroniki" src="./img/gallery3.jpg" class="gallery-masonry-image" />
+            <img alt="Gość delektuje sie spokojem w wyrafinowanej atmosferze" src="./img/gallery4.jpg"
+              class="gallery-masonry-image-tall gallery-masonry-image" />
+            <img alt="Pięknie podane makroniki oraz latte" src="./img/gallery5.jpg" class="gallery-masonry-image" />
+            <img alt="Filiżanka specjalnej indyjskiej herbaty" src="./img/gallery6.jpg" class="gallery-masonry-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="locations" aria-labelledby="locations-heading" class="js-anim-section locations-section">
+      <div class="locations-container">
+        <h2 id="locations-heading" class="section-title">
+          Gdzie nas znajdziesz
+        </h2>
+        <div class="locations-grid">
+          <div class="locations-primary">
+            <article role="region" aria-labelledby="location-downtown" class="location-card">
+              <h3 id="location-downtown" class="location-card-title">
+                Aroma Café – Salon Stare Miasto
+              </h3>
+              <p class="location-card-address">
+                ul. Szafranowa 7, Stare Miasto, Kraków
+              </p>
+              <div class="location-card-hours">
+                <svg width="18" height="18" viewBox="0 0 24 24" class="location-card-icon">
+                  <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 6v6l4 2"></path>
+                    <circle r="10" cx="12" cy="12"></circle>
+                  </g>
+                </svg>
+                <span>Codziennie: 7:00 – 21:00</span>
+              </div>
+              <div class="location-card-actions">
+                <a href="tel:+1234567890">
+                  <div aria-label="Zadzwoń do Salon Stare Miasto" class="btn-sm btn-primary btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" class="btn-icon">
+                      <path
+                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                    <span>Zadzwoń</span>
+                  </div>
+                </a>
+                <a href="#contact">
+                  <div class="btn-sm btn-outline btn">
+                    <span>Jak dojechać</span>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article role="region" aria-labelledby="location-riverside" class="location-card">
+              <h3 id="location-riverside" class="location-card-title">
+                Aroma Café – Atelier&nbsp;Podgórze
+              </h3>
+              <p class="location-card-address">
+                ul. Wierzbowa 12, Podgórze, Kraków
+              </p>
+              <div class="location-card-hours">
+                <svg width="18" height="18" viewBox="0 0 24 24" class="location-card-icon">
+                  <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 6v6l4 2"></path>
+                    <circle r="10" cx="12" cy="12"></circle>
+                  </g>
+                </svg>
+                <span>Wt-Nie: 8:00 – 18:00</span>
+              </div>
+              <p class="location-card-note">W poniedziałki zamknięte</p>
+              <div class="location-card-actions">
+                <a href="tel:+1234567890">
+                  <div aria-label="Zadzwoń do Atelier Podgórze" class="btn-sm btn-primary btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" class="btn-icon">
+                      <path
+                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                    <span>Zadzwoń</span>
+                  </div>
+                </a>
+                <a href="#contact">
+                  <div class="btn-sm btn-outline btn">
+                    <span>Jak dojechać</span>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="locations-secondary">
+            <div class="locations-info-card">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="locations-info-icon">
+                <path
+                  d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0zm.894.211v15M9 3.236v15"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+              </svg>
+              <h3 class="locations-info-title">
+                Prywatne degustacje i wydarzenia
+              </h3>
+              <p class="locations-info-text">
+                Zarezerwuj wyjątkowy wieczór z degustacją lub prywatną
+                obsługą
+              </p>
+              <a href="#contact">
+                <div class="btn-accent btn-sm btn">
+                  <span>Rezerwuj wieczór</span>
+                </div>
+              </a>
+            </div>
+            <div class="locations-info-card">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="locations-info-icon">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 2v4m8-4v4"></path>
+                  <rect x="3" y="4" rx="2" width="18" height="18"></rect>
+                  <path d="M3 10h18"></path>
+                </g>
+              </svg>
+              <h3 class="locations-info-title">Godziny świąteczne</h3>
+              <p class="locations-info-text">
+                <span></span>
+                <span>
+                  Godziny otwarcia mogą ulec sezonowym zmianom. Zadzwoń
+                  wcześniej, aby potwierdzić dostępność i wyjątkowe godziny
+                  obsługi.
+                </span>
+              </p>
+              <a href="#inquiryForm">
+                <div class="btn-accent btn-sm btn">
+                  <span>Sprawdź dostępność</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" aria-labelledby="contact-heading" class="js-anim-section contact-section">
+      <div class="contact-container">
+        <h2 id="contact-heading" class="section-title">
+          Kontakt &amp; Rezerwacje
+        </h2>
+        <div class="contact-grid">
+          <div class="contact-primary">
+            <div class="contact-form-wrapper">
+              <h3 class="contact-form-title">
+                Zarezerwuj kameralny stolik
+              </h3>
+              <p class="contact-form-subtitle">
+                W przypadku rezerwacji na ten sam dzień prosimy o kontakt
+                telefoniczny, aby potwierdzić dostępność.
+              </p>
+              <form id="reserveForm" role="form" aria-labelledby="reserve-heading" class="contact-form">
+                <h4 id="reserve-heading" class="contact-form-heading">
+                  Prośba o rezerwację
+                </h4>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="reserve-name" class="form-label">
+                      Imię i nazwisko
+                    </label>
+                    <input type="text" id="reserve-name" name="name" required
+                      class="form-input" />
+                  </div>
+                  <div class="form-group">
+                    <label for="reserve-email" class="form-label">
+                      Email
+                    </label>
+                    <input type="email" id="reserve-email" name="email" required
+                      class="form-input" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="reserve-phone" class="form-label">
+                      Telefon (opcjonalnie)
+                    </label>
+                    <input type="tel" id="reserve-phone" name="phone" class="form-input" />
+                  </div>
+                  <div class="form-group">
+                    <label for="reserve-guests" class="form-label">
+                      Liczba gości
+                    </label>
+                    <select id="reserve-guests" name="guests" class="form-input" required>
+                      <option value="" disabled selected>Liczba gości</option>
+                      <option value="1">1 Gość</option>
+                      <option value="2">2 Gości</option>
+                      <option value="3">3 Gości</option>
+                      <option value="4">4 Gości</option>
+                      <option value="5+">5+ Gości</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="reserve-date" class="form-label">
+                      Data
+                    </label>
+                    <input type="date" id="reserve-date" name="date" required
+                      class="form-input" />
+                  </div>
+                  <div class="form-group">
+                    <label for="reserve-time" class="form-label">
+                      Time
+                    </label>
+                    <input type="time" id="reserve-time" name="time" required
+                      class="form-input" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="reserve-notes" class="form-label">
+                    Uwagi specjalne lub preferencje żywieniowe
+                  </label>
+                  <textarea id="reserve-notes" name="notes" rows="3" class="form-input form-textarea"></textarea>
+                </div>
+                <button type="submit" class="btn-lg btn-primary btn">
+                  Zarezerwuj
+                </button>
+                <div id="reserveAlert" role="alert" class="form-alert"></div>
+              </form>
+            </div>
+            <div class="contact-inquiry-wrapper">
+              <h3 class="contact-form-title">Zapytania ogólne</h3>
+              <p class="contact-form-subtitle">
+                <span>
+                  Masz pytanie dotyczące naszego menu, prywatnych degustacji
+                  lub wydarzeń?
+                </span>
+                <br />
+                <span>
+                  Wyślij nam wiadomość, a nasza obsługa skontaktuje się z
+                  Tobą w ciągu jednego dnia roboczego.
+                </span>
+              </p>
+              <form id="inquiryForm" class="contact-form">
+                <div class="form-group">
+                  <label for="inquiry-name" class="form-label">
+                    Imię i nazwisko
+                  </label>
+                  <input type="text" id="inquiry-name" name="name" required
+                    class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label for="inquiry-email" class="form-label">
+                    Email
+                  </label>
+                  <input type="email" id="inquiry-email" name="email" required
+                    class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label for="inquiry-message" class="form-label">
+                    Wiadomość
+                  </label>
+                  <textarea id="inquiry-message" name="message" rows="4" required
+                    class="form-input form-textarea"></textarea>
+                </div>
+                <button type="submit" aria-label="Wyślij wiadomość z zapytaniem" class="btn-primary btn">
+                  Wyślij wiadomość
+                </button>
+                <div id="inquiryAlert" role="alert" class="form-alert"></div>
+              </form>
+            </div>
+          </div>
+          <div class="contact-secondary">
+            <div class="contact-card">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="contact-card-icon">
+                <path
+                  d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+              </svg>
+              <h3 class="contact-card-title">Telefon</h3>
+              <p class="contact-card-text">
+                W przypadku rezerwacji na ten sam dzień lub większych grup
+                prosimy o kontakt telefoniczny.
+              </p>
+              <a href="tel:+123456789">
+                <div class="contact-card-link">
+                  <span>(000) 012-3456</span>
+                </div>
+              </a>
+            </div>
+            <div class="contact-card">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="contact-card-icon">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                  <rect x="2" y="4" rx="2" width="20" height="16"></rect>
+                </g>
+              </svg>
+              <h3 class="contact-card-title">Email</h3>
+              <p class="contact-card-text">
+                W sprawie rezerwacji i zapytań
+              </p>
+              <a href="mailto:reservatesttions@aromacafe.ttest?subject=">
+                <div class="contact-card-link">
+                  <span>reservatesttions@aromacafe.ttest</span>
+                </div>
+              </a>
+            </div>
+            <div role="button" tabindex="0" class="contact-card-events contact-card">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="contact-card-icon">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87">
+                  </path>
+                  <circle r="4" cx="9" cy="7"></circle>
+                </g>
+              </svg>
+              <h3 class="contact-card-title">
+                Prywatne Rezerwacje &amp; Wydarzenia
+              </h3>
+              <p class="contact-card-text">
+                <span>
+                  Zorganizuj eleganckie spotkanie w naszym prywatnym
+                  salonie.
+                </span>
+                <br />
+                <span>
+                  Zamów indywidualną konsultację w sprawie autorskiego menu
+                  i dopasowania win.
+                </span>
+                Host a refined gathering in our private salon. Request a
+                consultation for bespoke menus and wine pairings.
+              </p>
+              <a class="btn-accent btn-sm btn" type="button" href="#inquiryForm">
+                Zamów konsultację
+              </a>
+            </div>
+            <div class="contact-card-location contact-card">
+              <img alt="Eleganckie minimalistyczne wnetrze kawiarni" src="./img/booking.jpg" class="contact-card-bg" />
+              <div class="contact-card-overlay"></div>
+              <div class="contact-card-content-elevated">
+                <svg width="24" height="24" viewBox="0 0 24 24" class="contact-card-icon">
+                  <path
+                    d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0zm.894.211v15M9 3.236v15"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  </path>
+                </svg>
+                <h3 class="contact-card-title">Lokalizacja</h3>
+                <p class="contact-card-text">
+                  Znajdziesz nas w historycznej części miasta, zaledwie
+                  kilka minut spacerem od Rynku.
+                </p>
+                <a href="#locations">
+                  <div class="btn-sm btn-outline btn">
+                    <span>Mapa &amp; Wskazówki Dojazdu</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <svg width="24" height="24" viewBox="0 0 24 24" class="contact-card-icon">
+                <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 6v6l4 2"></path>
+                  <circle r="10" cx="12" cy="12"></circle>
+                </g>
+              </svg>
+              <h3 class="contact-card-title">Godziny otwarcia</h3>
+              <div class="contact-hours">
+                <p class="contact-hours-row">
+                  <span class="contact-hours-row-text-1 ">Pon-Pt</span>
+                  <span class="contact-hours-row-text-2">7:30 – 19:30</span>
+                </p>
+                <p class="contact-hours-row">
+                  <span class="contact-hours-row-text-1">Sob–Nie</span>
+                  <span class="contact-hours-row-text-2">8:00 – 18:00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="js-anim-section footer">
+    <div class="footer__container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <svg width="32" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24">
+              <path
+                d="M10 2v2m4-2v2m2 4a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1M6 2v2"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </svg>
+            <span class="footer__brand-name">Aroma Café</span>
+          </div>
+          <p class="footer__brand-tagline">
+            Od 2020 roku celebrujemy sztukę kawy. Każda filiżanka to
+            opowieść o smaku, elegancji i czasie dla siebie
+          </p>
+          <div class="footer__social">
+            <a href="#">
+              <div aria-label="Odwiedź naszą stronę na Facebooku" class="footer__social-link">
+                <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div aria-label="Odwiedź naszą stronę na Instagram" class="footer__social-link">
+                <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                  <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" rx="5" ry="5" width="20" height="20"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"></path>
+                  </g>
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div aria-label="Odwiedź naszą stronę na X" class="footer__social-link">
+                <svg width="20" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24">
+                  <path
+                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6c2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4c-.9-4.2 4-6.6 7-3.8c1.1 0 3-1.2 3-1.2"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  </path>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__column-title">Explore</h3>
+          <nav class="footer__nav">
+            <a href="#">
+              <p class="footer__link">O nas</p>
+            </a>
+            <a href="#">
+              <p class="footer__link">Nasze menu</p>
+            </a>
+            <a href="#">
+              <p class="footer__link">Galeria</p>
+            </a>
+            <a href="#">
+              <p class="footer__link">Rezerwacja&nbsp;</p>
+            </a>
+            <a href="#">
+              <p class="footer__link">Prywatne wydarzenia</p>
+            </a>
+            <a href="#">
+              <p class="footer__link">Warsztaty kawowe</p>
+            </a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__column-title">Informacje</h3>
+          <nav class="footer__nav">
+            <a href="#">
+              <p class="footer__link">Zrównoważony rozwój</p>
+            </a>
+            <a href="#">
+              <p class="footer__link">Kariera</p>
+            </a>
+            <a href="#">
+              <p class="footer__link">Media i prasa</p>
+            </a>
+            <a href="#">
+              <p class="footer__link">Partnerstwa</p>
+            </a>
+            <a href="#">
+              <p class="footer__link">Karty podarunkowe</p>
+            </a>
+            <a href="#">
+              <p class="footer__link">FAQ</p>
+            </a>
+          </nav>
+        </div>
+        <div class="footer__column footer__column--contact">
+          <h3 class="footer__column-title">Odwiedź nas</h3>
+          <div class="footer__contact-list">
+            <div class="footer__contact-item">
+              <div class="footer__contact-icon">
+                <svg width="18" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24">
+                  <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M17.97 9.304A8 8 0 0 0 2 10c0 4.69 4.887 9.562 7.022 11.468m12.356-4.842a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z">
+                    </path>
+                    <circle r="3" cx="10" cy="10"></circle>
+                  </g>
+                </svg>
+              </div>
+              <div class="footer__contact-text">
+                <span class="footer__contact-label">Lokalizacja</span>
+                <span class="footer__contact-value">
+                  ul. Szafranowa 7, Stare Miasto, Kraków
+                </span>
+              </div>
+            </div>
+            <div class="footer__contact-item">
+              <div class="footer__contact-icon">
+                <svg width="18" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24">
+                  <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 6v6l4 2"></path>
+                    <circle r="10" cx="12" cy="12"></circle>
+                  </g>
+                </svg>
+              </div>
+              <div class="footer__contact-text">
+                <span class="footer__contact-label">
+                  Godziny otwarcia
+                </span>
+                <span class="footer__contact-value">
+                  Pon-Pt: 7-20
+                </span>
+              </div>
+            </div>
+            <div class="footer__contact-item">
+              <div class="footer__contact-icon">
+                <svg width="18" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24">
+                  <path
+                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  </path>
+                </svg>
+              </div>
+              <div class="footer__contact-text">
+                <span class="footer__contact-label">
+                  zazwoń do nas
+                </span>
+                <span class="footer__contact-value">
+                  <a href="tel:+1234567890">+123456789</a>
+                </span>
+              </div>
+            </div>
+            <div class="footer__contact-item">
+              <div class="footer__contact-icon">
+                <svg width="18" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24">
+                  <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                    <rect x="2" y="4" rx="2" width="20" height="16"></rect>
+                  </g>
+                </svg>
+              </div>
+              <div class="footer__contact-text">
+                <span class="footer__contact-label">Email</span>
+                <span class="footer__contact-value">
+                  <a href="mailto:kontakt@aromacafe.ttest">kontakt@aromacafe.ttest</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__newsletter">
+        <div class="footer__newsletter-content">
+          <div class="footer__newsletter-text">
+            <h3 class="footer__newsletter-title">
+              Dołącz do naszej społeczności kawowej
+            </h3>
+            <p class="footer__newsletter-description">
+              Subskrybuj, aby otrzymywać ekskluzywne oferty, porady dotyczące parzenia kawy i starannie dobrane
+              doświadczenia kawowe.
+            </p>
+          </div>
+          <form id="subscribeForm" action="#" method="post" class="footer__newsletter-form">
+            <div class="footer__newsletter-input-wrapper">
+              <input type="email" id="footerEmailInput" required aria-label="Podaj adres mailowy"
+                placeholder="Podaj adres mailowy" class="footer__newsletter-input" />
+              <button id="subscribeBtn" type="submit" class="btn footer__newsletter-button btn-primary"
+                aria-label="Zapisanie się do newslettera">
+                Subskrybuj
+              </button>
+            </div>
+            <div id="subscribeAlert" role="alert" class="form-alert footer__newsletter-alert">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-content">
+          <p class="footer__copyright">
+            © <span class="footer-year"></span> Aroma Café. All rights reserved.
+          </p>
+          <nav class="footer__legal">
+            <a href="#">
+              <p class="footer__legal-link">Polityka prywatności</p>
+            </a>
+            <span class="footer__legal-divider"></span>
+            <a href="#">
+              <p class="footer__legal-link">Regulamin serwisu</p>
+            </a>
+            <span class="footer__legal-divider"></span>
+            <a href="#">
+              <p class="footer__legal-link">Dostępność</p>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
